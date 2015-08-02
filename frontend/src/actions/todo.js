@@ -1,7 +1,10 @@
 import AppDispatcher from "../dispatcher/appdispatcher";
 import _ from "underscore";
-;
+
 var TodoActions = {
+  appStarted: () => {
+    AppDispatcher.dispatch({actionType: "todo-app-started"});
+  },
   create: (payload) => {
     AppDispatcher.dispatch(_.extend(payload, {actionType: "todo-create"}));
   },

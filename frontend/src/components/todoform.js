@@ -31,7 +31,7 @@ class TodoForm extends Component {
   render() {
     return(
       <form onSubmit={this._onSubmit}>
-        <input onChange={this._onTodoChange} type="text" value={this.state.todo.body} autoFocus />
+        <input onChange={this._onTodoChange} type="text" value={this.state.todo.body} autoFocus placeholder="new todo ..." />
         <input type="submit" />
       </form>
     );

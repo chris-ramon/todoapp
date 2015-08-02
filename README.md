@@ -7,3 +7,5 @@ A simple todo app, using react, flux and go
 `npm install`
 
 `webpack-dev-server`
+
+visit: `http://localhost:8080/webpack-dev-server/`
